@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/*
+Paleta de Cores:
+white
+black
+DEGRADE:
+#1F3B47
+#2A4651
+#91A4AA
+*/
+
+/* Começando sempre pela MOBILE FIRST */ 
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;  
+    margin: 0px; 
+    box-sizing: border-box; 
+}
+
+body, html {
+    background-color: #1F3B47 ; /* Cor de Fundo */
+    height: 100vh;  /* Altura */
+    width: 100vw; /* Largura */
+}
+
+main{
+    position: relative; /* Config para Centralizar na tela*/
+    height: 100vh; /* Altura */
+    width: 100vw; /* Largura */
+}
+
+section#login {
+    background-color: white;
+    width: 250px; /* Largura */
+    height: 500px; /* Altura */
+    border-radius: 30px; /* Faz uma curva nas bordas*/
+    overflow: hidden;
+
+    position: absolute; /* Config para Centralizar na tela*/
+    top: 50%; 
+    left: 50%;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Sombra de Fundo */
+    transform: translate(-50%, -50%);
+
+    transition: width 0.3s, heigth 0.3s; /* Efeito de Transição */
+    transition-timing-function: ease; /* Efeito de Transição */
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #2A4651 url(../imagens/login.jpg) no-repeat; /*Foto da Imagem*/
+    background-size: cover;
+    height: 200px; /* Altura */
+    background-position: left center ; 
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: hsla(197, 32%, 24%, 0.65);
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    height: 40px;
+    margin: 5px 0px;
+    border: 1.8px solid hsla(197, 32%, 24%, 0.65);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color:rgb(0, 0, 0);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: rgba(42, 70, 81, 0.771) ;
+    font-size: 1em;
+    height:110%;
+    width: calc(100% - 44.9px);
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: hsla(197, 32%, 24%, 0.85);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type=submit]:hover {
+    background-color: #1F3B47;
+    font-weight: bolder;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:  white ;
+   
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: hsla(197, 32%, 24%, 0.85);
+    padding-top: 5px;
+    margin-top: 5px;
+    
+}
+
+form > a.botao:hover {
+    background-color: hsla(197, 32%, 24%, 0.85);
+    font-weight: bolder;
+    color: white
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+::-webkit-input-placeholder { /* Mudar a cor do placeholder*/
+    color: white;
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ :-moz-placeholder {
+    color: white;
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ ::-moz-placeholder {
+    color: white;  
+    font: 12px verdana, arial, sans-serif;
+ }
+ 
+ :-ms-input-placeholder {  
+    color: white;  
+    font: 12px verdana, arial, sans-serif;
+ }
